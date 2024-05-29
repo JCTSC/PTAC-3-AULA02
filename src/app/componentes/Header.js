@@ -6,7 +6,6 @@ export default function Header(){
 return(
     <header className={styles.header}>
          <h1>Header</h1>
-        
         <nav>
             <ul>
                 <Link href="/">
@@ -18,7 +17,6 @@ return(
                 <Link href="/localizacao">
                     <li>Localização</li>
                 </Link>
-
             </ul>
         </nav>
     </header>
