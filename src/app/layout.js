@@ -1,5 +1,4 @@
-import Main from "./componentes/main"
-import Header from "./componentes/Header"
+import Header from "./componentes/Header.js"
 import Footer from "./componentes/Footer"
 
 export const metadata = {
@@ -10,11 +9,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
 
+      <body>
       <Header />
-      <Main />
+      {children}
       <Footer />
-
-      <body>{children}</body>
+      </body>
     </html>
   )
 }

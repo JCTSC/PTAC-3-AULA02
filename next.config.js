@@ -1,7 +1,8 @@
 const nextConfig = {
     images: {
     domains:[
-        "fakestoreapi.com","static.wikia.nocookie.net"
+        "fakestoreapi.com",
+        "static.wikia.nocookie.net"
 
     ]
     
