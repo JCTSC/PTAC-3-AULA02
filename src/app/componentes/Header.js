@@ -8,16 +8,9 @@ return(
          <h1>Header</h1>
         <nav>
             <ul>
-                <Link href="/">
-                    <li>Home</li>
-                </Link>
-                <Link href="/registro">
-                    <li>Registrar</li>
-                </Link>
-                <Link href="/localizacao">
-                    <li>Localização</li>
-                    <Link href="/"></Link>
-                </Link>
+                <li>Home</li>
+                <li>Registrar</li>
+                <li>Localização</li>
             </ul>
         </nav>
     </header>

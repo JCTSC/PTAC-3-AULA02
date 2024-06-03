@@ -9,7 +9,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
 
-      <body>
+      <body style={{backgroundColor: "aqua"}}>
+        
       <Header />
       {children}
       <Footer />

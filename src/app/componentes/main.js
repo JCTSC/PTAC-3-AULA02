@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../componentes/main.module.css";
+import autoprefixer from "autoprefixer";
 
 
 export default async function Home() {
@@ -11,8 +12,8 @@ export default async function Home() {
        <div className={styles.card} key={produtos.id}>  
           <p>{produtos.title}</p>
             <p>{produtos.price}</p>
-          <Image src={produtos.image} 
-          width={100} height={100} alt="produtos image"/>
+          <Image style={{margin: "auto"}} src={produtos.image} 
+          width={275} height={275} alt="produtos image"/>
           <p> {produtos.rating.rate} </p>
           <p> {produtos.rating.count} </p>
           <p> {produtos.category} </p>
