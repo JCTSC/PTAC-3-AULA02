@@ -13,6 +13,7 @@ return(
          src={"https://moodle.org/theme/moodleorg/pix/moodle_logo_TM.svg"}
          />
 </Link>
+
          <h1>Footer</h1>
     </footer>
 );
