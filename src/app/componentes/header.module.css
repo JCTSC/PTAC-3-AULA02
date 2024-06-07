@@ -1,0 +1,30 @@
+.header{
+  padding: 10px;
+  margin: -8px;
+  background-color: #5c0e0e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.header li{
+  display: inline;
+  color: rgb(170, 72, 72);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 10px;
+  margin: -8px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+
+   
