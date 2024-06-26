@@ -4,14 +4,18 @@ import Image from "next/image";
 import styles from "./main.module.css";
 import Spinner from "./Spinner";
 import ErrorGetData from "./ErrorGetData";
+import Link from "next/link";
 
 export default function Main(){
+    
     const [listProducts, setListProducts] = useState([]);
     const [listComplete, setListComplete] = useState([]);
     const [search, setSearch] = useState("");
     const [errorFetch, setErrorFetch] = useState(false);
+    
 
     useEffect( () => {
+        
         const getProduct = async () => {
     try{
             const response = await fetch("https://fakestoreapi.com/products");
@@ -73,8 +77,10 @@ if(errorFetch == true) {
             <button onClick={orderZA}>Z á A</button>
             <button onClick={orderPriceMaior}>Do maior ao menor</button>
             <button onClick={orderPriceMenor}>Do menor ao maior</button>
+            <input type="text" value={search} placeholder="Pesquisar" onChange={(e) => searchText(e.target.value)} style={{overflow: "hidden"}} />
+            
             </div> 
-           
+            
         <main className={styles.main}>
            
             {listProducts.map((produtos) =>
@@ -83,6 +89,7 @@ if(errorFetch == true) {
                   <p>{produtos.price}</p>
                 <Image style={{margin: "auto"}} src={produtos.image} 
                 width={275} height={275} alt="produtos image"/>
+                <Link href={`/product/${produtos.id}`}> Especificações </Link>
                 <p> {produtos.rating.rate} </p>
                 <p> {produtos.rating.count} </p>
                 <p> {produtos.category} </p>
