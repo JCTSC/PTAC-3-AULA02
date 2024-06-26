@@ -63,8 +63,20 @@ if(errorFetch == true) {
             <Spinner />        
             </>
         )
+    }
 
-        return(<main className={styles.main}>
+        return( 
+            <div>
+            <div className={styles.main}>
+                
+            <button onClick={orderAZ}>A á Z</button>
+            <button onClick={orderZA}>Z á A</button>
+            <button onClick={orderPriceMaior}>Do maior ao menor</button>
+            <button onClick={orderPriceMenor}>Do menor ao maior</button>
+            </div> 
+           
+        <main className={styles.main}>
+           
             {listProducts.map((produtos) =>
              <div className={styles.card} key={produtos.id}>  
                 <p>{produtos.title}</p>
@@ -77,7 +89,10 @@ if(errorFetch == true) {
                 <p> {produtos.description }</p>
              </div>
           )}; 
-          </main>)
+          
+          </main>
+        </div>
+        )
+
 
   }
-}

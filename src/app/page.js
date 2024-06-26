@@ -1,4 +1,4 @@
-import Main from "./componentes/Main.js"
+import Main from "./componentes/Main"
 
 export default async function Home(){
 return(
@@ -6,4 +6,3 @@ return(
 );
 
 };
-
